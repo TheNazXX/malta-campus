@@ -48,12 +48,19 @@ ul,li{
 /*===============header===============*/
 
 .header{
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
   position: fixed;
   z-index: 100;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
 
+.header-inner{
+  position: relative;
   padding: 8px 26px;
   display: flex;
   align-items: center;
@@ -545,12 +552,21 @@ ul,li{
 /*===============menu===============*/
 
 .form{
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 20px;
   left: 0;
+  z-index: 100;
   right: 0;
   margin: 0 auto;
 
+  padding: 0 10px;
+
+ 
+}
+
+.form-inner{
   display: flex;
   gap: 36px;
   justify-content: center;
